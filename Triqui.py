@@ -1,4 +1,5 @@
 import random
+from time import sleep
 
 # Imprime por consola el tablero
 def print_board(board):
@@ -66,11 +67,11 @@ def main():
         
         # Pintar la jugada del computador
         board[computer_row][computer_column] = "O"
-        print(board[computer_row][computer_column])
+        
         winner = check_winner(board)
         if winner is not None:
             break
-
+    sleep(1)
     print_board(board)
     print(winner, "es el ganador!")
 
