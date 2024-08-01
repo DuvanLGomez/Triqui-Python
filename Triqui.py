@@ -71,8 +71,6 @@ def main():
         winner = check_winner(board)
         if winner is not None:
             break
-    sleep(1)
-    print_board(board)
     print(winner, "es el ganador!")
 
        
